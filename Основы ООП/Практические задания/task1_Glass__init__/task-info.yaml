@@ -28,7 +28,7 @@ files:
                   raise ValueError
               self.occupied_volume = occupied_volume  # объем жидкости в стакане
   - offset: 944
-    length: 152
+    length: 184
     placeholder_text: "...  # TODO инициализировать два объекта типа Glass"
     initial_state:
       length: 51
@@ -39,7 +39,7 @@ files:
     encrypted_possible_answer: |-
       glass1 = Glass(200, 100)  # экземпляр класса
           glass2 = Glass(500, 50)  # экземпляр класса
-  - offset: 1101
+  - offset: 1133
     length: 57
     placeholder_text: '# TODO попробовать инициализировать не корректные объекты'
     initial_state:
@@ -66,5 +66,7 @@ files:
         # TODO попробовать инициализировать не корректные объекты
   learner_created: false
 status: Solved
+feedback:
+  time: "Fri, 26 Jan 2024 16:00:50 UTC"
 record: -1
 post_submission_on_open: true

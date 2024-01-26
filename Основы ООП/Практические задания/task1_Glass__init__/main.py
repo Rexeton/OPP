@@ -30,5 +30,6 @@ if __name__ == "__main__":
     print(Glass_2.occupied_volume)
 
     Glass_error= Glass(1,3)
+    Glass_error = Glass("1", 3)
       # TODO инициализировать два объекта типа Glass
     # TODO попробовать инициализировать не корректные объекты
