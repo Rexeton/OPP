@@ -12,8 +12,6 @@ files:
         # TODO работоспособность экземпляров класса проверить с помощью doctest
         pass
   learner_created: false
-status: Solved
-feedback:
-  time: "Fri, 26 Jan 2024 16:24:19 UTC"
+status: Unchecked
 record: -1
 post_submission_on_open: true

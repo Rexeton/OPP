@@ -3,7 +3,7 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 594
+  - offset: 598
     length: 84
     placeholder_text: "...  # TODO реализовать метод"
     initial_state:
@@ -13,8 +13,8 @@ files:
     selected: true
     status: Solved
     encrypted_possible_answer: '...'
-  - offset: 842
-    length: 157
+  - offset: 846
+    length: 166
     placeholder_text: "...  # TODO используя атрибут класса DAY_OF_MONTH вернуть к\
       оличество дней в запрашиваемом месяце и году"
     initial_state:
@@ -24,7 +24,7 @@ files:
     selected: true
     status: Solved
     encrypted_possible_answer: '...'
-  - offset: 1193
+  - offset: 1301
     length: 45
     placeholder_text: "...  # TODO проверить валидность даты"
     initial_state:

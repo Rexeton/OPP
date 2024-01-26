@@ -11,7 +11,7 @@ files:
       offset: 724
     initialized_from_dependency: false
     selected: true
-    status: Solved
+    status: Unchecked
     encrypted_possible_answer: "Glass(500, 50)  # экземпляр класса"
   - offset: 791
     length: 93
@@ -21,7 +21,7 @@ files:
       offset: 779
     initialized_from_dependency: false
     selected: false
-    status: Solved
+    status: Unchecked
     encrypted_possible_answer: "glass2.capacity_volume, glass2.occupied_volume)"
   - offset: 967
     length: 37
@@ -31,7 +31,7 @@ files:
       offset: 882
     initialized_from_dependency: false
     selected: false
-    status: Solved
+    status: Unchecked
     encrypted_possible_answer: glass1.occupied_volume += 100
   - offset: 1126
     length: 51
@@ -41,7 +41,7 @@ files:
       offset: 1041
     initialized_from_dependency: false
     selected: true
-    status: Solved
+    status: Unchecked
     encrypted_possible_answer: "print(glass1 is glass2)  # проверяем, что это два\
       \ разных объекта"
   text: |
@@ -80,6 +80,6 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Solved
+status: Unchecked
 record: -1
 post_submission_on_open: true

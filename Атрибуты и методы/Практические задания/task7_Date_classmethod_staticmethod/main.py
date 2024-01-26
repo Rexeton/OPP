@@ -6,32 +6,42 @@ class Date:
     )
 
     def __init__(self, day: int, month: int, year: int):
-        self.day = self.check_numbers(day)
-        self.month = self.check_numbers(month)
-        self.year = self.check_numbers(year)
 
-        self.is_valid_date(self.day, self.month, self.year)
+        self.day = self.check_numbers(day,"День")
+        self.month = self.check_numbers(month,"Месяц")
+        self.year = self.check_numbers(year,"Год")
+        self.is_valid_date(day, month, year)
+
+
+
     @staticmethod
-    def is_leap_year(year: int):
+    def is_leap_year(year):
         """Проверяет, является ли год високосным"""
         is_leap=0
         if year % 4==0:
             is_leap = 1
             # TODO реализовать метод
         return is_leap
-    def get_max_day(self,month: int, year: int):
+
+    @staticmethod
+    def get_max_day(month: int, year):
         """Возвращает максимальное количество дней в месяце для указанного года"""
-        return self.DAY_OF_MONTH[self.is_leap_year(year)][month+1] # TODO используя атрибут класса DAY_OF_MONTH вернуть количество дней в запрашиваемом месяце и году
+        return Date.DAY_OF_MONTH[Date.is_leap_year(year)][month-1] # TODO используя атрибут класса DAY_OF_MONTH вернуть количество дней в запрашиваемом месяце и году
 
-    def is_valid_date(self,day: int, month: int, year: int):
+    @staticmethod
+    def is_valid_date(day: int, month, year):
         """Проверяет, является ли дата корректной"""
-        if self.get_max_day(month,year)<day:
-            return False
+        max_day=Date.get_max_day(month,year)
+        if max_day<day:
+            raise ValueError(f"Такой даты не бывает. Последний день этого месяца {max_day}")
         return True  # TODO проверить валидность даты
-    def check_numbers(self,num):
+    def check_numbers(self,num,name_param):
         if not isinstance(num,int):
-            raise TypeError("В дате должны быть числа")
-        if num<0:
-            raise ValueError("Отрицательных чисел не должно быть")
+            raise TypeError(f"{name_param} должен быть числом")
+        if num<0 and name_param != "Год":
+            raise ValueError(f"{name_param} отрицательным не бывает")
+        if num>12 and name_param=="Месяц":
+            raise ValueError(f"{name_param} не может быть {num}")
 
-Date1=Date(30,3,2024)
+
+Date1=Date(29,2,2023)
