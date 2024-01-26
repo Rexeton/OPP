@@ -3,8 +3,8 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 99
-    length: 330
+  - offset: 123
+    length: 344
     placeholder_text: |-
       # TODO сделать методом класса
           def area(self, *args):
@@ -20,8 +20,8 @@ files:
       length: 330
       offset: 99
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       @classmethod
           def area(cls, *args):
@@ -33,8 +33,8 @@ files:
                   cls.area_by_height(*args)
               if len(args) == 3:
                   cls.area_by_angle(*args)
-  - offset: 435
-    length: 73
+  - offset: 490
+    length: 67
     placeholder_text: "def area_by_angle(self, a, b, angle):  # TODO сделать стати\
       ческим методом"
     initial_state:
@@ -42,12 +42,12 @@ files:
       offset: 435
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |-
       @staticmethod
           def area_by_angle(a, b, angle):
-  - offset: 627
-    length: 67
+  - offset: 693
+    length: 61
     placeholder_text: "def area_by_height(self, a, h):  # TODO сделать статическим\
       \ методом"
     initial_state:
@@ -55,7 +55,7 @@ files:
       offset: 627
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |-
       @staticmethod
           def area_by_height(a, h):
@@ -96,6 +96,8 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  time: "Fri, 26 Jan 2024 16:37:27 UTC"
 record: -1
 post_submission_on_open: true
