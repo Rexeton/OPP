@@ -7,8 +7,8 @@ files:
     length: 84
     placeholder_text: "...  # TODO реализовать метод"
     initial_state:
-      length: 29
-      offset: 513
+      length: 84
+      offset: 598
     initialized_from_dependency: false
     selected: true
     status: Solved
@@ -18,8 +18,8 @@ files:
     placeholder_text: "...  # TODO используя атрибут класса DAY_OF_MONTH вернуть к\
       оличество дней в запрашиваемом месяце и году"
     initial_state:
-      length: 103
-      offset: 685
+      length: 166
+      offset: 846
     initialized_from_dependency: false
     selected: true
     status: Solved
@@ -28,8 +28,8 @@ files:
     length: 45
     placeholder_text: "...  # TODO проверить валидность даты"
     initial_state:
-      length: 37
-      offset: 913
+      length: 45
+      offset: 1301
     initialized_from_dependency: false
     selected: false
     status: Solved

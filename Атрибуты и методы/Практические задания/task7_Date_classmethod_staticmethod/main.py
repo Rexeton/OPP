@@ -44,4 +44,4 @@ class Date:
             raise ValueError(f"{name_param} не может быть {num}")
 
 
-Date1=Date(29,2,2023)
+Date1=Date(29,2,2024)

@@ -26,13 +26,13 @@ files:
     initial_state:
       length: 26
       offset: 188
-    initialized_from_dependency: true
+    initialized_from_dependency: false
     selected: false
     status: Solved
     encrypted_possible_answer: |-
       class Book:
           ...
-  - offset: 867
+  - offset: 217
     length: 29
     placeholder_text: '# TODO написать класс Library'
     initial_state:
@@ -80,5 +80,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Fri, 26 Jan 2024 21:14:15 UTC"
+  time: "Thu, 01 Feb 2024 17:31:26 UTC"
 record: -1
