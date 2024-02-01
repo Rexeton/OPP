@@ -47,7 +47,7 @@ class Date:
     # TODO записать getter и setter для дня
     @property
     def day(self):
-        return self._day
+        print(self._day)
     @day.setter
     def day(self,day):
         self._day= self.check_numbers(day,"День")
@@ -55,15 +55,19 @@ class Date:
 
     @property
     def month(self):
-        return self._month
+        print(self._month)
 
     @month.setter
     def month(self,month):
         self._month = self.check_numbers(month,"Месяц")
 
+    @month.getter
+    def month(self):
+        return self._month
+
     @property
     def year(self):
-        return self._month
+        print(self._month)
 
     @year.setter
     def year(self,year):
@@ -78,4 +82,6 @@ if __name__=='__main__':
     date.day=5
     date.month=12
     date.year=2020
+    date.month
+    # print(date.month)
     print(date)

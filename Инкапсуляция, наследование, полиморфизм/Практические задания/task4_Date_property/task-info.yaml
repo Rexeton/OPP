@@ -77,7 +77,7 @@ files:
               if not 1 <= day <= 31:
                   raise ValueError
               self._day = day
-  - offset: 2429
+  - offset: 2496
     length: 42
     placeholder_text: '# TODO записать getter и setter для месяца'
     initial_state:
@@ -98,7 +98,7 @@ files:
               if not 1 <= month <= 12:
                   raise ValueError
               self._month = month
-  - offset: 2477
+  - offset: 2544
     length: 40
     placeholder_text: '# TODO записать getter и setter для года'
     initial_state:
