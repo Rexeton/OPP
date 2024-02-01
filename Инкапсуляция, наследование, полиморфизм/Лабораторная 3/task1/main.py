@@ -62,4 +62,5 @@ if __name__ == "__main__":
     book= AudioBook("Великое путешествие", "Неизвестный",50.2)
     print(book.__str__())
     print(book.__repr__())
+    book.name
 
